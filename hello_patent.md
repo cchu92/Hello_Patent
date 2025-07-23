@@ -7,7 +7,7 @@ While trying to solve what seemed like a simple task:
 My first approach was to use the Espacenet patent search platform, as shown below:
 
 
- <img src="./images/espacent.PNG" width="200" height="200" alt="hello">
+ <img src="./images/espacent.png" width="200" height="200" alt="Espacenet patent search platform">
  
  
  Or by using the following CQL query:
@@ -60,7 +60,7 @@ Would you like help crafting query strings or navigating Espacenet/WIPO to extra
 
 **This revealed a key bottleneck in semantic search for real-world patent tasks. If the language model (LLM) could directly call professional search tools (like Espacenet or the more advanced EPO OPS API), the process would be far more automated and efficient.**
 
-#How MCP Helps LLMs Access External Tools
+# How MCP Helps LLMs Access External Tools
 
 The Model Context Protocol (MCP) is a standardized interface that allows LLMs to interact with external tools, data sources, and environments.
 The European Patent Office’s Open Patent Services (EPO OPS API) is the official service offering structured access to patent data, including advanced query capabilities for fields like applicants, publication dates, abstracts, classification codes, legal status, and family information.
@@ -119,7 +119,7 @@ the response content is omited dislay here.
 
 LLM read the "response=>contet", and returned 22 matching results:
 
- <img src="./images/mcp_LLM.PNG" width="200" height="200" alt="hello">
+ <img src="./images/mcp_LLM.png" width="400" height="400" alt="LLM with MCP tool search results">
  
 ## Demo 2: Real-Time Legal Status Lookup
  
@@ -143,16 +143,14 @@ LLM read the "response=>contet", and returned 22 matching results:
 
  and returned the correct legal information:
  
-  <img src="./images/legal_status.PNG" width="200" height="200" alt="hello">
+  <img src="./images/legal_status.png" width="400" height="400" alt="LLM with MCP tool search results">
   
   
 # Conclusion 
   
-With the integration of more MCP tools currently under development, it is now possible to programmatically search and download patent documents through the EPO OPS system.
+With the integration of more MCP tools currently under development, it is now possible to programmatically search and download patent documents through the EPO OPS system. Due to my limited experience in patent search practices, I intend to experiment with more complex retrieval scenarios to evaluate robustness and usability.
 
-Due to my limited experience in patent search practices, I intend to experiment with more complex retrieval scenarios to evaluate robustness and usability.
-
-Transforming prior art documents and office actions into a knowledge base that is accessible to both humans and machines is not the primary challenge—the real difficulty lies in ensuring transformation accuracy.
+Furthermore, transforming prior art documents and office actions (pdfs) into a knowledge base that is accessible to both humans and machines is not the primary challenge—the real difficulty lies in ensuring transformation accuracy.
 The key challenges include:
 
 > 1.The layout complexity of patent literature.
